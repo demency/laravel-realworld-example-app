@@ -1,23 +1,27 @@
-# ![RealWorld Example App](logo.png)
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/556934/25306200/81705610-273d-11e7-8a2b-a00b336c3a40.png"></p>
 
-> ### [YOUR_FRAMEWORK] codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) spec and API.
+> Example Laravel codebase that adheres to the RealWorld API spec.
 
+## Getting started
 
-### [Demo]()&nbsp;&nbsp;&nbsp;&nbsp;[RealWorld](https://github.com/gothinkster/realworld)
+### via Docker
 
+``` bash
+$ git clone git@github.com:gothinkster/laravel-realworld-example-app.git
+$ cd laravel-realworld-example-app
+$ docker-compose up -d
+```
 
-This codebase was created to demonstrate a fully fledged fullstack application built with **[YOUR_FRAMEWORK]** including CRUD operations, authentication, routing, pagination, and more.
+visit `http://localhost`
 
-We've gone to great lengths to adhere to the **[YOUR_FRAMEWORK]** community styleguides & best practices.
+### manually
 
-For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
-
-
-# How it works
-
-> Describe the general architecture of your app here
-
-# Getting started
-
-> npm install, npm start, etc.
-
+``` bash
+$ git clone git@github.com:gothinkster/laravel-realworld-example-app.git
+$ cd laravel-realworld-example-app
+$ composer install
+$ cp .env.example .env
+$ php artisan key
+$ php artisan migrate
+$ php artisan serve
+```
